@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow-y: auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: flex-start; /* Добавлено */
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.item {
+  width: 150px;
+  min-height: 66px; /* Изменено с height на min-height */
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+  word-wrap: break-word; /* Добавлено для переноса длинных слов */
+  overflow-wrap: break-word; /* Добавлено для современных браузеров */
+  display: flex; /* Добавлено */
+  align-items: center; /* Добавлено */
+  justify-content: center; /* Добавлено */
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+
+.placeholder {
+  width: 150px;
+  min-height: 66px; /* Изменено с height на min-height */
+  margin-bottom: 1rem; /* Добавлено для отступа между элементами */
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  border: 2px solid #3498db;
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: 2px dashed #5BACD7;
+  background-color: rgba(91, 212, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.user-input {
+  width: 600px;
+  margin-bottom: 2rem;
+}
+
+.user-input form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-input-label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+}
+
+.user-input-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.user-input-input:focus {
+  outline: none;
+  border-color: #209cff;
+}
+
+.user-input-button {
+  padding: 0.8rem 1rem;
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.user-input-button:hover {
+  opacity: 0.7;
+}
+
+.user-input-button:active {
+  opacity: 0.5;
+}
+
+.clear-button {
+  /* margin-top: 1rem; */
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(90deg, #ff2020 0%, #e068bc 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.clear-button:hover {
+  opacity: 0.7;
+}
+
+.clear-button:active {
+  opacity: 0.5;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #91BFD7;
+  margin: 2rem auto;
+  width: 100%;
+}
+
